@@ -5,7 +5,6 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 - va applicato uno sconto del 20% per i minorenni
 - va applicato uno sconto del 40% per gli over 65.
 = L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
-
 */
 
 
@@ -14,11 +13,11 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 /* variabile price */
 let km_Price = 0.21;
 /* variabile km */
-let km = parseFloat(prompt('Inserisci i km da percorrere'));
+let km = Number(prompt('Inserisci i km da percorrere'));
 /* variabile price */
 let km_Total_Price = km * km_Price;
 /* variabile età */
-let age = parseFloat(prompt('Inserisci età passeggero'));
+let age = Number(prompt('Inserisci età passeggero'));
 /* variabile sconto */
 let Total_price;
 
