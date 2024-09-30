@@ -24,9 +24,9 @@ let Total_price;
 
 
 //seconda fase: elaborazione dati
-/* Condizione Under18 */
+/* Condizione unica */
 Total_price = km_Total_Price
-
+/* Condizione Under18 */
 if (age < 18) {
     Total_price = (km_Total_Price - (km_Total_Price * 0.2));
     /* Condizione Over65 */
