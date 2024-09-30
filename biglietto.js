@@ -24,9 +24,16 @@ let Total_price;
 
 
 //seconda fase: elaborazione dati
-
-console.log(km_Total_Price, age, Total_price);
-
+/* Condizione Under18 */
 if (age < 18){
-    Total_price = km_Total_Price - (km_Total_Price*0.2);
-} 
+    Total_price = (km_Total_Price - (km_Total_Price*0.2));
+/* Condizione Over65 */
+} else if (age > 65){
+    Total_price = (km_Total_Price - (km_Total_Price*0.4));
+}
+/* Imposto 2 decimali al prezzo totale */
+Total_price.toFixed(2);
+/* Messaggio finale */
+alert(`Il prezzo totale del biglietto è: €${Total_price}`);
+/*Output console */
+console.log(Total_price);
