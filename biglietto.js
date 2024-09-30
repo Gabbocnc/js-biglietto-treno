@@ -25,11 +25,13 @@ let Total_price;
 
 //seconda fase: elaborazione dati
 /* Condizione Under18 */
-if (age < 18){
-    Total_price = (km_Total_Price - (km_Total_Price*0.2));
-/* Condizione Over65 */
-} else if (age > 65){
-    Total_price = (km_Total_Price - (km_Total_Price*0.4));
+Total_price = km_Total_Price
+
+if (age < 18) {
+    Total_price = (km_Total_Price - (km_Total_Price * 0.2));
+    /* Condizione Over65 */
+} else if (age > 65) {
+    Total_price = (km_Total_Price - (km_Total_Price * 0.4));
 }
 /* Imposto 2 decimali al prezzo totale */
 Total_price.toFixed(2);
